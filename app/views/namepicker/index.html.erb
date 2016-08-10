@@ -1,0 +1,12 @@
+<h1>Random Name Picker</h1>
+
+<%= form_tag namepicker_path do %>
+  <div>
+    <%= text_area_tag :names %>
+  </div>
+  <%= submit_tag "Pick winner!" %>
+<% end %>
+
+<%if @names.is_a? String  %>
+<%="The Winner is: #{@dd}" %>
+<% end  %>
